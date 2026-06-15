@@ -1,94 +1,217 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class = "scroll-smooth" >
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Test Tail wind</title>
-    <link rel="stylesheet" href = "./output.css">
+    <title>Test Tailwind</title>
+    <link rel="stylesheet" href="./output.css">
 </head>
-<body class= "bg-white ">
-    <h1 class = "text-blue-500 text-5xl text-center font-bold ">Connexion</h1><br><br>
-    <form action = "" method = "get" class = " text-center font-bold text-2xl">
-            <input  type = "email" placeholder="Entrez votre email" class = "border rounded-lg text-center " ><br><br>
-            <input type = "password" placeholder="entrez votre md pass" class="border rounded-lg text-center " >
-    </form><br>
 
-    <div class =" text-yellow-500  rounded-b-lg font-bold text-2xl text-center  hover:text-red-950 " >
-        <button class = "bg-blue-600 rounded-lg px-4  ">Se connecter</button><br><br>
-        
-        <button class = "bg-green-500 rounded-lg px-4 ml-3">Creer un compte</button><br>
-    </div><br>
+<script>
+window.addEventListener("scroll", function () {
+
+    let img = document.getElementById("aboutImg");
+
+    
+    let scrollValue = window.scrollY;
+
+    
+    let moveX = scrollValue * 0.05;
+    let moveY = scrollValue * 0.02;
+
+    img.style.transform = `translateX(${scrollValue * 0.03}px) scale(1.05)`;})
+</script>
+<body class="bg-white ">
 
 
+<nav class=" flex flex-col md:flex-row max-w-5xl mx-auto top-0 left-0 bg-orange-400 text-white w-full flex-wrap justify-center items-center gap-20 px-6 py-10 font-bold z-auto"
+style="position: fixed !important; z-index: 1 !important; padding-top: 15px !important; padding-bottom: 15px !important;">
 
-    <h2 class = "text-red-950 text-center font-bold text-4xl ">LISTE DES PRODUITS DISPONIBLES</h2>
+    <div class="items-center gap-2">
+        <img src="saccc.jpeg" class="w-10 h-10 rounded-lg" alt="logo">
+    </div>
+
+    <a href="#" class="hover:text-gray-300 text-xl">HOME</a>
+    <a href="#a-propos" class="hover:text-gray-300 text-xl">ABOUT</a>
+    <a href="#nos_produits" class="hover:text-gray-300 text-xl">PRODUCTS</a>
+    <a href="#contact" class="hover:text-gray-300 text-xl">CONTACT US</a>
+
+</nav><br>
 
 
-    <ul class = "text-center font-bold text-2xl">
-
-        <li>Chaussures</li>
-        <li>Telephones</li>
-        <li>Maillots</li>
-       <li>habits pour femmes</li>
-    </ul><br>''
-
-    <div class="flex gap-50 w-full max-w-xs">
-        <img src="iii.jpesg" alt="image" class = "w-250 h-100"><br>
-        
-        <img src="1091300p_1_2048x.jpg" alt="imge" class = "w-250 h-100"><br>
-        
-        <img src="immm.jpeg" alt="imge" class = "w-250 h-100">
-
-        <img src="3d-realistic-home-soccer-jersey-600nw-2753585061.jpg" alt="imge" class = "w-250 h-100">
-
-    </div><br><br>
+<section class = " justify-center max-w-5xl mx-auto relative mt-24 items-center bg-cover bg-center h-auto w-full"
+    style =  "background-image:url(image_69dc2a88.png);" >
     
 
-    <table class =  "text-4xl  flex justify-center ">
-        <tr class = " border bg-gray-200">
-            <th class = "border px-5 ">PRODUITS</th>
-            <th class = " border px-5">QUANTITé</th>
-            <th class = " border px-5">PRIX</th>
-        </tr>
+    <div class="absolute inset-0 bg-black/90"></div>
 
-        <tr  class = " border bg-gray-200 text-left">
-            <td class = " border px-5 text-2xl">Chaussures</td>
-            <td class = " border px-5 text-2xl">200</td>
-            <td class = " border px-5 text-2xl">15000</td>
-        </tr>
 
-        <tr  class = " border bg-gray-200 text-left">
-            <td class = " border px-5 text-2xl">SAC</td>
-            <td class = " border px-5 text-2xl">100</td>
-            <td class = " border px-5 text-2xl">20.000</td>
-        </tr>
+    <div class="flex h-full ">
 
-        <tr  class = " border bg-gray-200 text-left">
-            <td class = " border px-5 text-2xl">Maillot</td>
-            <td class = " border px-5 text-2xl">69</td>
-            <td class = " border px-5 text-2xl">5000</td>
-        </tr>
+        <div class="translate-y-20 ml-10 max-w-xl text-white w-1/2"><br><br>
 
-    </table><br>
+            <h1 class="text-2xl md:text-7xl text-gray-300 font-bold gap-6 px-6 py-4 mb-6">
+                VENTE DE PRODUITS
+            </h1>
 
-    <nav class = "bg-gray-500 text-black flex gap-6 px-6 py-4 font-bold">
-        <a href = "#" class = "hover:text-gray-300 text-2xl">Accueil</a>
-        <a href = "#" class = "hover:text-gray-300 text-2xl">Service</a>
-        <a href = "#" class = "hover:text-gray-300 text-2xl">Contact</a>
-        <a href = "#" class = "hover:text-gray-300 text-2xl">Service Client</a>
-        <a href = "#" class = "hover:text-gray-300 text-2xl">A propos de Nous</a>
-        <a href = "#" class = "hover:text-gray-300 text-2xl">Nous joindre sur watsapp</a>
+            <h2 class="w-1/2 ml-10 mb-10 justify-center text-gray-200 ">
+                Des produits de qualité à des prix imbattables.
+                Livraison rapide et paiement sécurisé, disponible sur toute l'étendue du territoire.
+                
+            </h2><br>
 
-    </nav><br>
 
-    <footer>
-        <h class = "text-3xl font-bold">A propos de Nous !</h>
-        <p>À l'instar d'une bibliothèque traditionnelle, nous offrons un accès gratuit aux chercheurs, historiens, universitaires, personnes ayant des difficultés de lecture et au grand public. Notre mission est de garantir l'accès universel à la connaissance.
+        </div>
 
-Nous avons commencé en 1996 par archiver Internet lui-même, un média dont l'usage commençait tout juste à se développer. À l'instar des journaux, le contenu publié sur le web était éphémère, mais contrairement aux journaux, personne ne le sauvegardait. Aujourd'hui, nous avons accès à 30 ans d'histoire du web grâce à la Wayback Machine et nous collaborons avec plus de 1 400 bibliothèques et autres partenaires dans le cadre de notre programme Archive-It afin d'identifier les pages web importantes.
+    </div>
 
-À mesure que nos archives en ligne se sont développées, notre engagement à fournir des versions numériques d'autres ouvrages publiés s'est également renforcé. 
-    </footer>
+</section>
+<br>
+
+<section id = "a-propos" class="justify-center max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-6 px-6 py-4 w-200">
+
+    <div class="md:w-1/2 w-1/2 gap-6 px-6 py-4 ">
+        <h2 class="font-bold text-3xl text-orange-400 mb-4 ">À propos</h2>
+
+        <p class="text-lg justify-center leading-relaxed font-bold">
+            Paiements 100% sécurisés, livraison rapide, produits vérifiés,
+            service client réactif et satisfait ou remboursé sous 14 jours.
+        </p>
+    </div>
+
+    <div class="rounded-lg shadow-lg md:w-1/2 w-1/2 ">
+        <img 
+            id ="aboutImg"
+            src="baroche-2.jpg"
+             class="w-200 h-auto rounded-lg shadow-lg"
+             alt="">
+    </div>
+
+
+</section>
+
+<br>
+
+<h3 class="text-4xl justify-center max-w-5xl mx-auto text-center w-full font-bold mb-10 text-red-600" id = "nos_produits">
+    Nos Produits
+</h3>
+
+<section class="flex flex-wrap justify-center max-w-5xl mx-auto gap-6 px-6 py-4 w-200 scroll-mt-16 "  >
+
+    <div class="bg-gray-600 shadow-lg rounded-lg p-4 text-center">
+        <img src="iii.jpeg" class="w-100 h-auto rounded-lg">
+
+        <h4 class=" text-2xl text-white font-bold mt-4">Téléphone</h4>
+        <p class="text-white text-xl">600 000 FCFA</p>
+
+        <button class="mt-4 bg-orange-400 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+            Acheter
+        </button>
+    </div>
+
+    
+    <div class="bg-gray-600 shadow-lg rounded-lg p-4 text-center">
+        <img src="1091300p_1_2048x.jpg" class="w-100 h-auto rounded-lg">
+
+        <h4 class="text-2xl  text-white font-bold object-cover mt-4">Chaussures</h4>
+        <p class="text-white text-xl">15 000 FCFA</p>
+
+        <button class="mt-4 bg-orange-400 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+            Acheter
+        </button>
+    </div>
+    
+    <div class="bg-gray-600 shadow-lg rounded-lg p-4 text-center">
+        <img src="3d-realistic-home-soccer-jersey-600nw-2753585061.jpg"
+             class="w-100 h-auto rounded-lg">
+
+        <h4 class="text-2xl text-white font-bold mt-4">Maillot</h4>
+        <p class="text-white text-xl">12 000 FCFA</p>
+
+        <button class="mt-4 bg-orange-400 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+            Acheter
+        </button>
+    </div>
+
+</section>
+
+<br>
+
+    <section class="justify-center max-w-5xl mx-auto flex w-200 items-center gap-6 px-6 py-4 mb-6 " id = "contact">
+        
+        <h5 class = "w-1/2 text-xl text-black font-bold ">Sur le formulaire à droite vous allez renseillez vos informations, pour valider votre commande </h5>
+        
+        <div class="w-1/2">
+  <form class="bg-white shadow-md bo border-black ml-20 px-8 pt-6 pb-8 mb-4">
+    <div class="mb-4">
+      <label class="block text-blue-500 text-xl font-bold mb-2" for="username">
+        Nom
+      </label><br>
+     <input class="bg-white border w-80 px-5 text-gray-700  " id="username" type="text" placeholder="Entrez votre nom.......">
+ 
+    </div>
+    <div class="mb-6">
+      <label class="block text-blue-500 text-xl font-bold mb-2" for="password">
+        Email
+      </label><br>
+      <input class="shadow bg-white appearance-none border border-black  w-80 px-5 text-gray-700 mb-3 leading-tight " placeholder="Entrez votre email......."  placeholder:px-3.5 type="email" >
+      
+    </div>
+    <div class="flex items-center justify-between">
+      <button class=" bg-green-500 text-white font-bold  px-4 rounded-lg focus:outline-none focus:shadow-outline" type="button">
+        Envoyez
+      </button>
+      
+    </div>
+  </form>
+  
+</div>
+    
+    </section>
+
+
+<footer class="flex flex-col md:flex-row bg-gray-500 justify-center max-w-5xl mx-auto gap-11 text-black items-center rounded-lg px-6 py-4 w-full" id = "a-propos">
+
+
+
+        <div >
+            <img src="saccc.jpeg"
+                class="w-10 h-20 rounded-lg "
+                alt="logo">
+        </div>
+
+        <div class = "ml-10">
+            <h3 class=" flex text-xl font-bold mb-3">Liens</h3>
+            <ul class="space-y-2">
+                <li>Accueil</li>
+                <li>Produits</li>
+                
+            </ul>
+            
+        </div>
+
+        <div class = "ml-10">
+            <h3 class="text-xl font-bold mb-3">Informations</h3>
+            <ul>
+                <li>Achats</li>
+                <li>Livraison</li>
+            </ul>
+        </div>
+
+        <div class = "ml-10">
+            <h3 class="text-xl font-bold mb-3">Contact</h3>
+            <p>Email : contact@boutique.com</p>
+            <p>Tél : +229 0154646270</p>
+        </div>
+
+    </div>
+
+    <hr class="my-6 border-gray-700"><br>
+
+    </p>
+    </div>
+
+</footer>
 
 </body>
 </html>
