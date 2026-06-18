@@ -16,31 +16,38 @@ window.addEventListener("scroll", function () {
     let scrollValue = window.scrollY;
 
     
-    let moveX = scrollValue * 0.05;
-    let moveY = scrollValue * 0.02;
+    let moveX = scrollValue * 0.1;
+    let moveY = scrollValue * 0.1;
 
-    img.style.transform = `translateX(${scrollValue * 0.03}px) scale(1.05)`;})
+    img.style.transform = `translateY(${-scrollValue * 0.1}px) scale(1.05)`;})
 </script>
 <body class="bg-white ">
 
 
-<nav class=" flex flex-col md:flex-row max-w-5xl mx-auto top-0 left-0 bg-orange-400 text-white w-full flex-wrap justify-center items-center gap-20 px-6 py-10 font-bold z-auto"
-style="position: fixed !important; z-index: 1 !important; padding-top: 15px !important; padding-bottom: 15px !important;">
+<nav class="mx-auto bg-orange-400 text-white w-full h-auto items-center px-7 font-bold z-auto"
+style="  position: fixed; padding-bottom: 15px ;
+  top: 0;
+  left: 0;  
+  width: 100%;    
+  z-index: 1000; display:flex; flex-wrap: wrap;" >
 
-    <div class="items-center gap-2">
-        <img src="saccc.jpeg" class="w-10 h-10 rounded-lg" alt="logo">
+
+
+    <div class ="justify-between mx-auto gap-4 items-center " style="display:flex; margin-top: 10px;">
+        <a href="#" class="hover:text-gray-300 text-xl"><img src="saccc.jpeg" class="w-10 h-10 rounded-lg" alt="logo"></a>
+        <a href="#" class="hover:text-gray-300 text-xl">HOME</a>
+        <a href="#a-propos" class="hover:text-gray-300 text-xl">ABOUT</a>
+        <a href="#nos_produits" class="hover:text-gray-300 text-xl">PRODUCTS</a>
+        <a href="#contact" class="hover:text-gray-300 text-xl">CONTACT US</a>
     </div>
+    
 
-    <a href="#" class="hover:text-gray-300 text-xl">HOME</a>
-    <a href="#a-propos" class="hover:text-gray-300 text-xl">ABOUT</a>
-    <a href="#nos_produits" class="hover:text-gray-300 text-xl">PRODUCTS</a>
-    <a href="#contact" class="hover:text-gray-300 text-xl">CONTACT US</a>
-
-</nav><br>
+</nav>
 
 
-<section class = " justify-center max-w-5xl mx-auto relative mt-24 items-center bg-cover bg-center h-auto w-full"
-    style =  "background-image:url(image_69dc2a88.png);" >
+<section class = "justify-center max-w-5xl mx-auto relative items-center bg-cover bg-center h-150 w-full "
+    style =  "background-image:url(image_69dc2a88.png); opacity: 0.75;
+margin-top:50px ; padding-bottom:  40px;"  id = "acc">
     
 
     <div class="absolute inset-0 bg-black/90"></div>
@@ -48,17 +55,19 @@ style="position: fixed !important; z-index: 1 !important; padding-top: 15px !imp
 
     <div class="flex h-full ">
 
-        <div class="translate-y-20 ml-10 max-w-xl text-white w-1/2"><br><br>
+        <div class="  text-white " style = " width: 50%; padding-left: 20px;">
 
-            <h1 class="text-2xl md:text-7xl text-gray-300 font-bold gap-6 px-6 py-4 mb-6">
-                VENTE DE PRODUITS
+            <h1 class="text-gray-300 text-3xl font-bold mb-6" style = "padding-top: 100px; ">
+                SPERO SHOP
             </h1>
 
-            <h2 class="w-1/2 ml-10 mb-10 justify-center text-gray-200 ">
-                Des produits de qualité à des prix imbattables.
-                Livraison rapide et paiement sécurisé, disponible sur toute l'étendue du territoire.
+                <h2 class="text-justify text-gray-200 " style = "text-align:justify ; font-size: clamp(14px, 2.5vw, 25px);">
+                Découvrez nos dernières collections de baskets tendances, de maillots officiels et de smartphones de dernière génération.<br> Le meilleur de la mode et de la tech à portée de clic.
                 
-            </h2><br>
+                </h2><br>
+
+                <button class="text-white font-bold px-4" type="button" style = " font-size:25px; width:200px; background-color: orangered; "><a href="#nos_produits" class="text-white hover:text-indigo-600 font-medium transition">Nos Articles</a>
+      </button>
 
 
         </div>
@@ -68,67 +77,68 @@ style="position: fixed !important; z-index: 1 !important; padding-top: 15px !imp
 </section>
 <br>
 
-<section id = "a-propos" class="justify-center max-w-5xl mx-auto flex flex-col md:flex-row items-center gap-6 px-6 py-4 w-200">
+<section id = "a-propos" class="max-w-5xl items-start mx-auto flex-col md:flex-row gap-6 px-6 py-4 w-full" style="display: flex;">
 
-    <div class="md:w-1/2 w-1/2 gap-6 px-6 py-4 ">
-        <h2 class="font-bold text-3xl text-orange-400 mb-4 ">À propos</h2>
+    <div class=" gap-6 " style = "text-align:justify ; width: 50%; ">
+        <h2 class="font-bold text-3xl text-orange-400 mb-4 ">À propos de Nous</h2>
 
-        <p class="text-lg justify-center leading-relaxed font-bold">
-            Paiements 100% sécurisés, livraison rapide, produits vérifiés,
-            service client réactif et satisfait ou remboursé sous 14 jours.
+        <p class=" text-black " style = "font-size: clamp(14px, 2.5vw, 20px);">
+            Chez <span class="font-bold">SPERO SHOP</span>, nous pensons que chaque détail compte. Que vous soyez à la recherche de la paire de chaussures parfaite pour affirmer votre style, du maillot qui soutient votre équipe favorite, ou du smartphone qui booste votre quotidien, nous avons ce qu'il vous faut.
         </p>
     </div>
 
-    <div class="rounded-lg shadow-lg md:w-1/2 w-1/2 ">
+    <div class="rounded-lg shadow-lg md:w-1/2 w-1/2" style="padding-top: 20px;">
         <img 
             id ="aboutImg"
             src="baroche-2.jpg"
-             class="w-200 h-auto rounded-lg shadow-lg"
-             alt="">
+             class="w-full h-auto rounded-lg shadow-lg"
+             alt="" style="width: 100%; max-width: 600px; object-fit: cover; border-radius: 8px;">
     </div>
 
 
 </section>
 
-<br>
+<div class = "mx-auto" style = "text-align: justify; ">
+    <h3 class="text-4xl max-w-5xl text-center w-full font-bold mb-10" id = "nos_produits" style =" color: orangered;">Nos Produits</h3>
+    <p class = "text-center text-2xl" style>Parcourez notre cathalogue<br> et trouvez ce qu'il vous faut.</p>
 
-<h3 class="text-4xl justify-center max-w-5xl mx-auto text-center w-full font-bold mb-10 text-red-600" id = "nos_produits">
-    Nos Produits
-</h3>
+</div>
 
-<section class="flex flex-wrap justify-center max-w-5xl mx-auto gap-6 px-6 py-4 w-200 scroll-mt-16 "  >
+
+
+<section class="flex h-auto gap-20 px-4 py-4 w-full mx-auto" style = "flex-wrap:wrap; justify-content: center;" >
 
     <div class="bg-gray-600 shadow-lg rounded-lg p-4 text-center">
-        <img src="iii.jpeg" class="w-100 h-auto rounded-lg">
+        <img src="iii.jpeg" class="w-40 h-50 rounded-lg">
 
         <h4 class=" text-2xl text-white font-bold mt-4">Téléphone</h4>
         <p class="text-white text-xl">600 000 FCFA</p>
 
-        <button class="mt-4 bg-orange-400 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+        <button class="mt-4 bg-orange-400 text-white px-5 py-1 hover:bg-blue-700">
             Acheter
         </button>
     </div>
 
     
     <div class="bg-gray-600 shadow-lg rounded-lg p-4 text-center">
-        <img src="1091300p_1_2048x.jpg" class="w-100 h-auto rounded-lg">
+        <img src="1091300p_1_2048x.jpg" class="w-50 h-auto rounded-lg">
 
         <h4 class="text-2xl  text-white font-bold object-cover mt-4">Chaussures</h4>
         <p class="text-white text-xl">15 000 FCFA</p>
 
-        <button class="mt-4 bg-orange-400 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+        <button class="mt-4 bg-orange-400 text-white px-5 py-1 hover:bg-blue-700">
             Acheter
         </button>
     </div>
     
     <div class="bg-gray-600 shadow-lg rounded-lg p-4 text-center">
         <img src="3d-realistic-home-soccer-jersey-600nw-2753585061.jpg"
-             class="w-100 h-auto rounded-lg">
+             class="w-40 h-50 rounded-lg">
 
         <h4 class="text-2xl text-white font-bold mt-4">Maillot</h4>
         <p class="text-white text-xl">12 000 FCFA</p>
 
-        <button class="mt-4 bg-orange-400 text-white px-5 py-2 rounded-lg hover:bg-blue-700">
+        <button class="mt-4 bg-orange-400 text-white px-5 py-1 hover:bg-blue-700">
             Acheter
         </button>
     </div>
@@ -137,28 +147,45 @@ style="position: fixed !important; z-index: 1 !important; padding-top: 15px !imp
 
 <br>
 
-    <section class="justify-center max-w-5xl mx-auto flex w-200 items-center gap-6 px-6 py-4 mb-6 " id = "contact">
+<section class=" mx-auto w-full items-start gap-6 px-6 py-4 mb-6 " id = "contact" style=" justify-content: space-between !important; display:flex;">
+
+
+        <div class ="w-1/2" style = "text-align:justify ;">
+            <h5 class = "text-3xl font-bold " style = "color: orangered ">Contactez-nous</h5>
+
+            
+            <h6 style ="font-size: clamp(14px, 2.5vw, 18px);" class = "text-black text-justify">Vous avez besoin d'un conseil pour choisir votre paire de chaussures ? Une question sur la disponibilité d'un smartphone ou sur la taille d'un maillot ? Notre équipe est à votre entière disposition.Remplissez ce formulaire et nous vous répondrons avec plaisir sous 24 heures. </h6>
+        </div>
         
-        <h5 class = "w-1/2 text-xl text-black font-bold ">Sur le formulaire à droite vous allez renseillez vos informations, pour valider votre commande </h5>
         
-        <div class="w-1/2">
-  <form class="bg-white shadow-md bo border-black ml-20 px-8 pt-6 pb-8 mb-4">
+        
+        <div style = "text-align:justify ; width: 50%;">
+            <form style ="padding-bottom: 10px;" class="bg-white border border-black px-6  py-5 mb-4">
     <div class="mb-4">
-      <label class="block text-blue-500 text-xl font-bold mb-2" for="username">
+      <label class="bloc text-xl font-bold mb-2" for="username" style ="color: grey;">
         Nom
       </label><br>
-     <input class="bg-white border w-80 px-5 text-gray-700  " id="username" type="text" placeholder="Entrez votre nom.......">
+     <input class="bg-white border w-full px-5 text-gray-700  " id="username" type="text" placeholder="Entrez votre nom.......">
  
     </div>
     <div class="mb-6">
-      <label class="block text-blue-500 text-xl font-bold mb-2" for="password">
+      <label class="blocktext-xl font-bold mb-2" for="password" style ="color: grey;">
         Email
       </label><br>
-      <input class="shadow bg-white appearance-none border border-black  w-80 px-5 text-gray-700 mb-3 leading-tight " placeholder="Entrez votre email......."  placeholder:px-3.5 type="email" >
+      <input class="shadow bg-white appearance-none border border-black  w-full px-5 text-gray-700 mb-3 leading-tight " placeholder="Entrez votre email......."  placeholder:px-3.5 type="email" >
       
     </div>
-    <div class="flex items-center justify-between">
-      <button class=" bg-green-500 text-white font-bold  px-4 rounded-lg focus:outline-none focus:shadow-outline" type="button">
+
+    <div >
+        <label class="blocktext-xl font-bold mb-2" for="password" style ="color: grey;">
+        Message
+        </label><br>
+        <input class="shadow bg-white appearance-none border border-black  w-full px-5 text-gray-700 mb-3 leading-tight " placeholder="Tapez votre Message......."  placeholder:px-3.5 type="email" >
+      
+    </div>
+
+    <div>
+      <button style = "background-color: orangered ;" class="text-white font-bold w-full px-4 focus:outline-none focus:shadow-outline" type="button">
         Envoyez
       </button>
       
@@ -167,49 +194,50 @@ style="position: fixed !important; z-index: 1 !important; padding-top: 15px !imp
   
 </div>
     
-    </section>
+</section>
 
 
-<footer class="flex flex-col md:flex-row bg-gray-500 justify-center max-w-5xl mx-auto gap-11 text-black items-center rounded-lg px-6 py-4 w-full" id = "a-propos">
+<footer  style = "background-color: orangered;" class="h-auto text-center text-white px-6 py-4 w-full" id = "a-propos" >
 
 
 
-        <div >
-            <img src="saccc.jpeg"
-                class="w-10 h-20 rounded-lg "
-                alt="logo">
-        </div>
+        <section class = "mx-auto gap-6 items-center" style="display:flex; justify-content: space-between !important;font-size: clamp(14px, 2.5vw, 20px);text-align: justify;">
+            <div>
+                <a href="#acc" class="text-gray-700 hover:text-indigo-600 font-medium transition"><img src="saccc.jpeg"
+                class="w-10 h-10 rounded-lg"
+                alt="logo" ></a>
 
-        <div class = "ml-10">
-            <h3 class=" flex text-xl font-bold mb-3">Liens</h3>
-            <ul class="space-y-2">
-                <li>Accueil</li>
-                <li>Produits</li>
-                
-            </ul>
+                <h3 class ="text-xl font-bold">Spero Shop</h3>
+                <h3>La référence pour vos articles </h3>
+
+            </div>
+
+
+
+            <div>
+                <h3 class=" flex text-xl font-bold">Liens</h3>
+                    <ul class = "text-xl lg:text-2xl">
+                        <li><a href="#acc" class="text-gray-700 hover:text-indigo-600 font-medium transition">Acceuil</a></li>
+                        <li><a href="#nos_produits" class=" hover:text-indigo-600 font-medium transition">Produits</a></li>
+                        
+                    </ul>
             
-        </div>
+            </div>
 
-        <div class = "ml-10">
-            <h3 class="text-xl font-bold mb-3">Informations</h3>
-            <ul>
-                <li>Achats</li>
-                <li>Livraison</li>
-            </ul>
-        </div>
-
-        <div class = "ml-10">
-            <h3 class="text-xl font-bold mb-3">Contact</h3>
-            <p>Email : contact@boutique.com</p>
-            <p>Tél : +229 0154646270</p>
-        </div>
-
-    </div>
-
-    <hr class="my-6 border-gray-700"><br>
-
-    </p>
-    </div>
+            <div>
+                <h4 class="text-xl font-bold">Informations</h4>
+                    <ul><li><a href="#nos_produits" class=" hover:text-indigo-600 font-medium transition">Achat</a></li>
+                        <li>Livraison</li>
+                    </ul>
+            </div>
+                
+            <div>
+                <h5 class="text-xl font-bold mb-3.5">Contact</h5>
+                    <a href="https://gmail.com" class=" hover:text-blue-800 underline">contact@gmail.com</a>
+                    <p>Tél :0154646270</p>
+            </div>
+                
+        </section>
 
 </footer>
 
